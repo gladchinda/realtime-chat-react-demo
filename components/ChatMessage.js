@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import twemoji from 'twemoji';
 
 class ChatMessage extends Component {
 
