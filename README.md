@@ -2,6 +2,10 @@
 
 Source code for tutorial on building a very simple real time chat application with sentiments by leveraging on some very popular and powerful technologies namely - [Next.js](https://learnnextjs.com/), [React](https://reactjs.org/), [Pusher](https://pusher.com/) and [Sentiment Node](https://github.com/thisandagain/sentiment) module. With sentiment analysis, we are able to detect the mood of a person based on the words they use in their messages.
 
+Here is a simple screenshot.
+
+![Chat App Screenshot](https://i.imgur.com/vROYgFJ.png)
+
 **In order to run the demo on your local machine and experiment with the source code, do the following:**
 
 1. **Clone the repository** into a new directory on your machine.
@@ -20,7 +24,7 @@ yarn add
 
 3. **Create a `.env` file** in the root of the new directory with the following content. Ensure you have already created an application on your [Pusher Dashboard](https://dashboard.pusher.com/) to get your app credentials.
 
-```
+```ini
 # Pusher App Credentials
 
 PUSHER_APP_ID=(YOUR_APP_ID)
