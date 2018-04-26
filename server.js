@@ -4,13 +4,14 @@ const Pusher = require('pusher');
 const express = require('express');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv').config();
-const sentiment = require('sentiment');
+const Sentiment = require('sentiment');
 
 const dev = process.env.NODE_ENV !== 'production';
 const port = process.env.PORT || 3000;
 
 const app = next({ dev });
 const handler = app.getRequestHandler();
+const sentiment = new Sentiment();
 
 const pusher = new Pusher({
   appId: process.env.PUSHER_APP_ID,
