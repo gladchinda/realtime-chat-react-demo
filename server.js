@@ -35,7 +35,7 @@ app.prepare()
 
     server.post('/message', (req, res, next) => {
       const { user = null, message = '', timestamp = (+new Date) } = req.body;
-      const sentimentScore = sentiment(message).score;
+      const sentimentScore = sentiment.analyze(message).score;
       const chat = { user, message, timestamp, sentiment: sentimentScore };
 
       chatHistory.messages.push(chat);
